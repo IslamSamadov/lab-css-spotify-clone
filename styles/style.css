@@ -1,8 +1,189 @@
 /*
 Colors:
 
-Text: 1A1A1A
+Text: #1A1A1A
 Green: #00B172
 White: #FFF
 
 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  font-weight: lighter;
+  line-height: 1.5em;
+  color: #1a1a1a;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Iteration 1: Navbar */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.navbar .logo {
+  width: 132px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+/* Iteration 2: Hero */
+
+.header {
+  background-image: url(../images/landing.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.header-content {
+  max-width: 780px;
+}
+
+.header h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.header p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/* Iteration 3: What's on Spotify */
+
+.whats-on {
+  text-align: center;
+  padding: 80px 40px 40px;
+}
+
+.whats-on h2 {
+  font-size: 3.5em;
+  font-weight: 600;
+  margin-bottom: 80px;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.box {
+  width: 33%;
+  padding: 0 40px;
+}
+
+.box img {
+  width: 100px;
+  margin-bottom: 30px;
+}
+
+.box h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.box p {
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+
+/* Iteration 4: Green section */
+
+.green-section {
+  position: relative;
+  background-color: #00b172;
+  color: #fff;
+  padding: 100px 90px 80px;
+  margin: 80px 40px 0;
+}
+
+.spotify-icon {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+}
+
+.green-section h2 {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-bottom: 60px;
+  border-bottom: 2px solid #19d482;
+  padding-bottom: 20px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.text {
+  width: 55%;
+}
+
+.text article {
+  margin-bottom: 40px;
+}
+
+.text h3 {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.text p {
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+.app-screenshot {
+  width: 40%;
+  max-width: 380px;
+}
