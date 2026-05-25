@@ -15,7 +15,7 @@ White: #FFF
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5em;
+  font-size: 10px;
   font-weight: lighter;
   line-height: 1.5em;
   color: #1a1a1a;
@@ -36,23 +36,25 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 40px;
+  padding: 15px 50px;
   background-color: #fff;
   z-index: 10;
 }
 
 .navbar .logo {
-  width: 132px;
+  width: 180px;
 }
 
 .navbar ul {
   display: flex;
   list-style: none;
-  gap: 20px;
+  width: 65%;
+  justify-content: space-between;
+  max-width: 560px;
 }
 
 .navbar ul li a {
-  font-size: 1.3em;
+  font-size: 1.8em;
   font-weight: 300;
 }
 
@@ -62,41 +64,50 @@ a {
   background-image: url(../images/landing.jpg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #fff;
-  padding: 0 20px;
+  padding: 0 5%;
 }
 
 .header-content {
-  max-width: 780px;
+  width: 100%;
+  max-width: 1400px;
 }
 
 .header h1 {
   font-size: 5rem;
   font-weight: 700;
   margin-bottom: 20px;
+  line-height: 1.1;
+  white-space: nowrap;
 }
 
 .header p {
   font-size: 1.5rem;
   font-weight: 300;
+  line-height: 1.4;
+  white-space: nowrap;
 }
 
 /* Iteration 3: What's on Spotify */
 
 .whats-on {
   text-align: center;
-  padding: 80px 40px 40px;
+  padding: 80px 40px 60px;
 }
 
 .whats-on h2 {
-  font-size: 3.5em;
+  display: inline-block;
+  font-size: 4.5em;
   font-weight: 600;
   margin-bottom: 80px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #00b172;
 }
 
 .boxes {
@@ -104,28 +115,29 @@ a {
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  gap: 40px;
 }
 
 .box {
-  width: 33%;
-  padding: 0 40px;
+  flex: 1;
+  padding: 0 50px;
 }
 
 .box img {
   width: 100px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .box h3 {
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 600;
+  color: #00b172;
   margin-bottom: 15px;
 }
 
 .box p {
-  font-size: 1.1em;
+  font-size: 1.5em;
   font-weight: 300;
+  color: #999;
   line-height: 1.4em;
 }
 
@@ -135,55 +147,61 @@ a {
   position: relative;
   background-color: #00b172;
   color: #fff;
-  padding: 100px 90px 80px;
-  margin: 80px 40px 0;
-}
-
-.spotify-icon {
-  position: absolute;
-  top: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
+  padding: 80px 8% 80px;
+  margin-top: 40px;
 }
 
 .green-section h2 {
-  text-align: center;
-  font-size: 2.5em;
+  display: inline-block;
+  font-size: 3.5em;
   font-weight: 600;
-  margin-bottom: 60px;
-  border-bottom: 2px solid #19d482;
-  padding-bottom: 20px;
+  margin-bottom: 50px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #fff;
+  text-align: left;
 }
 
 .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 60px;
+  gap: 30px;
 }
 
-.text {
-  width: 55%;
+.features {
+  flex: 1;
+  max-width: 600px;
 }
 
-.text article {
+.features article {
   margin-bottom: 40px;
 }
 
-.text h3 {
-  font-size: 1.8em;
-  font-weight: 600;
-  margin-bottom: 15px;
+.features article:last-child {
+  margin-bottom: 0;
 }
 
-.text p {
-  font-size: 1.2em;
+.features h3 {
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.features p {
+  font-size: 1.9em;
   font-weight: 300;
   line-height: 1.5em;
 }
 
+.spotify-icon {
+  flex-shrink: 0;
+  width: 157px;
+  align-self: center;
+  margin: 0 20px;
+}
+
 .app-screenshot {
-  width: 40%;
-  max-width: 380px;
+  flex-shrink: 0;
+  width: 32%;
+  max-width: 350px;
 }
